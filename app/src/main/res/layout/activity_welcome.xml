@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/mImageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/monitor" />
+
+    <TextView
+        android:id="@+id/mText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mImageView"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorBack"
+        android:text="@string/app_name"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/mContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mText"
+        android:gravity="center"
+        android:textSize="15sp"
+
+        android:layout_marginTop="30dp"
+        android:text="@string/welcome_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/mContent"
+        android:layout_marginTop="10dp"
+        android:text="@string/welcome_post"
+        android:layout_alignParentBottom="true"
+        android:textSize="10sp"/>
+
+</RelativeLayout>
